@@ -1,10 +1,15 @@
 console.log("Instructions");
 
 var makePyramid = function(input) {
-	var output = "";
+	var output = "\n";
 
-	for(var i = input; i > 0; i--) {
+	for(var i = 0; i < input; i++) {
+		for(var j = input - 2 - i; j >= 0; j--) {
+			output += " ";
+		}
+
 		output += "x";
+		output += "\n";
 	}
 
 	return output;
