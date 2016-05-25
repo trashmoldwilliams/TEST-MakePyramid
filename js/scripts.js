@@ -9,6 +9,11 @@ var makePyramid = function(input) {
 		}
 
 		output += "x";
+
+		for(var j = i; j > 0; j--) {
+			output += " x";
+		}
+
 		output += "\n";
 	}
 
